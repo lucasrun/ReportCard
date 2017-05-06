@@ -32,20 +32,20 @@ public class ReportCard {
     private double finalArt;
     private double finalMusic;
     private double finalReligion;
-    private ArrayList<Double> mathGrades = new ArrayList<Double>();
-    private ArrayList<Double> physicsGrades = new ArrayList<Double>();
-    private ArrayList<Double> chemistryGrades = new ArrayList<Double>();
-    private ArrayList<Double> computerGrades = new ArrayList<Double>();
-    private ArrayList<Double> techGrades = new ArrayList<Double>();
-    private ArrayList<Double> englishGrades = new ArrayList<Double>();
-    private ArrayList<Double> polishGrades = new ArrayList<Double>();
-    private ArrayList<Double> germanGrades = new ArrayList<Double>();
-    private ArrayList<Double> gymGrades = new ArrayList<Double>();
-    private ArrayList<Double> historyGrades = new ArrayList<Double>();
-    private ArrayList<Double> geographyGrades = new ArrayList<Double>();
-    private ArrayList<Double> artGrades = new ArrayList<Double>();
-    private ArrayList<Double> musicGrades = new ArrayList<Double>();
-    private ArrayList<Double> religionGrades = new ArrayList<Double>();
+    private ArrayList<Double> mathGrades = new ArrayList<>();
+    private ArrayList<Double> physicsGrades = new ArrayList<>();
+    private ArrayList<Double> chemistryGrades = new ArrayList<>();
+    private ArrayList<Double> computerGrades = new ArrayList<>();
+    private ArrayList<Double> techGrades = new ArrayList<>();
+    private ArrayList<Double> englishGrades = new ArrayList<>();
+    private ArrayList<Double> polishGrades = new ArrayList<>();
+    private ArrayList<Double> germanGrades = new ArrayList<>();
+    private ArrayList<Double> gymGrades = new ArrayList<>();
+    private ArrayList<Double> historyGrades = new ArrayList<>();
+    private ArrayList<Double> geographyGrades = new ArrayList<>();
+    private ArrayList<Double> artGrades = new ArrayList<>();
+    private ArrayList<Double> musicGrades = new ArrayList<>();
+    private ArrayList<Double> religionGrades = new ArrayList<>();
 
     public ReportCard(String studentName, String studentSurname, String opinionGrade, char behaviorGrade, int daysAttended, int daysMissed, ArrayList<Double> mathGrades, ArrayList<Double> physicsGrades, ArrayList<Double> chemistryGrades, ArrayList<Double> computerGrades, ArrayList<Double> techGrades, ArrayList<Double> englishGrades, ArrayList<Double> polishGrades, ArrayList<Double> germanGrades, ArrayList<Double> gymGrades, ArrayList<Double> historyGrades, ArrayList<Double> geographyGrades, ArrayList<Double> artGrades, ArrayList<Double> musicGrades, ArrayList<Double> religionGrades) {
         this.studentName = studentName;
@@ -108,7 +108,7 @@ public class ReportCard {
                 .append("STUDENT: ").append(studentName).append(" ").append(studentSurname).append("\n")
                 .append("Opinion: ").append(opinionGrade).append("\n")
                 .append("Behavior: ").append(behaviorGrade).append("\n")
-                .append("Days attended/missed: ").append(daysAttended).append("/").append(daysMissed).append(" ").append("[").append(daysAttended / (daysAttended + daysMissed)).append("%]").append("\n")
+                .append("Days attended/missed: ").append(daysAttended).append("/").append(daysMissed).append(" Total: [").append((100*daysAttended)/(daysAttended + daysMissed)).append("%]").append("\n")
                 .append("\n")
                 .append("GRADES").append("\n")
                 .append("Mathematics: ").append(mathGrades).append(" [Final: ").append(finalMath).append("]").append("\n")
